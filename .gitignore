@@ -130,3 +130,30 @@ dmypy.json
 
 .DS_Store
 *.class
+
+bin
+dist
+*~
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/dataPrivate
+/samples
+/build
+.gradle
+/data
+/images_cartpole
+/images_gridworld
+/images_mountaincar
+/images_pendulum
+/images_rooms
+/images_taxi
+/results_cartpole
+/results_gridworld
+/results_mountaincar
+/results_pendulum
+/results_rooms
+/results_taxi
