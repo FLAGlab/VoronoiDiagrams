@@ -1,27 +1,21 @@
-# Voronoi Diagrams
+# VAR Check
 
-Creates a Voronoi Diagram from a program definition using the LOC metric
+VAR Check offers software quality analysis for Reinforcement Learning (RL) programs. VAR Check provides an abstraction of RL programs and a first-hand view of code smells. Our visualization is based on Voronoi diagrams structured basd on the results of the software quality metrics.
+Currently VAR Check includes four metrics, but others can be added modularly
 
-## Quick Usage
+- Large Class (LC)
+- Long Method (LM)
+- Multiply Nested Components (MNC)
+- Long Parameter List (LPL)
 
+## Usage
 
-Download any grammar defined in ANTLR4 and run the following command,
-```
-java -cp antlr-4.9-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 -visitor ../clone_detection/grammars/XXX/XXX.g4
-```
+### 1. Metrics Extraction
 
-To run the program, create an environment
-```
-conda create -n clones python=3.8
-conda activate clones
+Metrics are extracted using a Python script (`PyAnalyzer.py`) that analyzes the source code for each of the required metrics
 
-pip install antlr4-python3-runtime==4.7.2
+``` python PyAnalyzer.py /path/to/programs Metric1 Metric2 ```
 
-```
+### 2. Diagram Generation
 
-Then run the parser Using the command 
-
-```
-python -m analysis --f examples/example.kt 
-```
-will return the eCST for the program
+The Voronoi diagrams are generated from the extracted metrics, based on the Voronoi Tree Maps tool. To generate the diagrams run the `PyAnalyzer.java` class part of the java project in the repository.
