@@ -18,4 +18,4 @@ Metrics are extracted using a Python script (`PyAnalyzer.py`) that analyzes the 
 
 ### 2. Diagram Generation
 
-The Voronoi diagrams are generated from the extracted metrics, based on the Voronoi Tree Maps tool. To generate the diagrams run the `PyAnalyzer.java` class part of the java project in the repository.
+The Voronoi diagrams are generated from the extracted metrics, based on the [Voronoi Tree Maps](https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-8659.2012.03078.x?casa_token=lNhoiEjNUDMAAAAA%3ALb_t_wWZoZUCtRz4HKmipBsaI1Ahz3YZLWDTj1NINUMDVkyJJ617bRwVwBod8LXG3zIM2bcs8seQjZ0) tool. To generate the diagrams run the `PyAnalyzer.java` class part of the java project in the repository.
